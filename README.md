@@ -37,7 +37,7 @@ A greatly enhanced fork of Misskey with better UI/UX, security, features, and mo
 
 * Official app website: <https://joinfirefish.org/>
 * Upstream app code repository: <https://git.joinfirefish.org/firefish/firefish>
-* YunoHost documentation for this app: <https://yunohost.org/app_firefish>
+* YunoHost Store: <https://apps.yunohost.org/app/firefish>
 * Report a bug: <https://github.com/YunoHost-Apps/firefish_ynh/issues>
 
 ## Developer info
