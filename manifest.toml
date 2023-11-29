@@ -5,7 +5,7 @@ name = "Firefish"
 description.en = "Fork of Misskey with better UI/UX, security, features"
 description.fr = "Un fork de Misskey avec une meilleure interface utilisateur, la sécurité, les fonctionnalités"
 
-version = "1.0.3~ynh1"
+version = "1.0.5rc~ynh1"
 
 maintainers = ["oufmilo"]
 
@@ -39,8 +39,8 @@ ram.runtime = "2G"
 [resources]
 
     [resources.sources.main]
-    url = "https://git.joinfirefish.org/firefish/firefish/-/archive/v1.0.3/firefish-v1.0.3.tar.gz"
-    sha256 = "0a3e2576dd2c9a104d1d937da17c36ed8ca4cbeb0ebe1bdbdde9147c15e1cb1b"
+    url = "https://git.joinfirefish.org/firefish/firefish/-/archive/v1.0.5-rc/firefish-v1.0.5-rc.tar.gz"
+    sha256 = "b9b59899eaddcdd94e10974e34af083bd9a9c6228046dc4d4af0f3a669ccb7ef"
 
     [resources.system_user]
 
