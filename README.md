@@ -25,7 +25,7 @@ A greatly enhanced fork of Misskey with better UI/UX, security, features, and mo
    
 
 
-**Shipped version:** 1.0.3~ynh1
+**Shipped version:** 1.0.5rc~ynh1
 
 **Demo:** https://joinfirefish.org/
 

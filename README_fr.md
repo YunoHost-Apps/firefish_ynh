@@ -23,7 +23,7 @@ Un fork grandement amélioré de Misskey avec une meilleure UI/UX, sécurité, f
     Firefish ajoute de nombreux changements de qualité de vie et des corrections de bogues pour les utilisateurs et les administrateurs d'instance.
 
 
-**Version incluse :** 1.0.3~ynh1
+**Version incluse :** 1.0.5rc~ynh1
 
 **Démo :** https://joinfirefish.org/
 
