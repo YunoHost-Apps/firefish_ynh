@@ -23,7 +23,7 @@ Un fork grandement amélioré de Misskey avec une meilleure UI/UX, sécurité, f
     Firefish ajoute de nombreux changements de qualité de vie et des corrections de bogues pour les utilisateurs et les administrateurs d'instance.
 
 
-**Version incluse :** 1.0.3~ynh1
+**Version incluse :** 1.0.5rc~ynh1
 
 **Démo :** https://joinfirefish.org/
 
@@ -35,7 +35,7 @@ Un fork grandement amélioré de Misskey avec une meilleure UI/UX, sécurité, f
 
 * Site officiel de l’app : <https://joinfirefish.org/>
 * Dépôt de code officiel de l’app : <https://git.joinfirefish.org/firefish/firefish>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_firefish>
+* YunoHost Store: <https://apps.yunohost.org/app/firefish>
 * Signaler un bug : <https://github.com/YunoHost-Apps/firefish_ynh/issues>
 
 ## Informations pour les développeurs
