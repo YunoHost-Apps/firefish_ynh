@@ -39,8 +39,8 @@ ram.runtime = "2G"
 [resources]
 
     [resources.sources.main]
-    url = "https://firefish.dev/firefish/firefish/-/archive/v1.0.5-rc/firefish-v1.0.5-rc.tar.gz"
-    sha256 = "b9b59899eaddcdd94e10974e34af083bd9a9c6228046dc4d4af0f3a669ccb7ef"
+    url = "https://firefish.dev/firefish/firefish/-/archive/v20240206/firefish-v20240206.tar.bz2"
+    sha256 = "51bf98a7c73bd5e1641cfc12318ace403cd697b4398d70c6e8027cf37d85a620"
     autoupdate.strategy = "latest_gitlab_release"
 
     [resources.system_user]
