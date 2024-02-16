@@ -11,8 +11,8 @@ maintainers = ["oufmilo"]
 
 [upstream]
 license = "AGPL-3.0"
-website = "https://firefish.dev/"
-demo = "https://info.firefish.dev/@firefish"
+website = "https://joinfirefish.org"
+demo = "https://info.firefish.dev"
 code = "https://firefish.dev/firefish/firefish"
 
 [integration]
@@ -39,7 +39,7 @@ ram.runtime = "2G"
 [resources]
 
     [resources.sources.main]
-    url = "https://git.joinfirefish.org/firefish/firefish/-/archive/v1.0.5-rc/firefish-v1.0.5-rc.tar.gz"
+    url = "https://firefish.dev/firefish/firefish/-/archive/v1.0.5-rc/firefish-v1.0.5-rc.tar.gz"
     sha256 = "b9b59899eaddcdd94e10974e34af083bd9a9c6228046dc4d4af0f3a669ccb7ef"
     autoupdate.strategy = "latest_gitlab_release"
 
