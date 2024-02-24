@@ -13,15 +13,15 @@ maintainers = ["oufmilo"]
 license = "AGPL-3.0"
 website = "https://joinfirefish.org/"
 demo = "https://joinfirefish.org/"
-code = "https://git.joinfirefish.org/firefish/firefish"
+code = "https://firefish.dev/firefish/firefish"
 
 [integration]
 yunohost = ">= 11.1.14"
-architectures = "all" 
+architectures = "all"
 multi_instance = false
-ldap = "not_relevant" 
-sso = "not_relevant" 
-disk = "50M" 
+ldap = "not_relevant"
+sso = "not_relevant"
+disk = "50M"
 ram.build = "2G"
 ram.runtime = "2G"
 
