@@ -11,8 +11,8 @@ maintainers = ["oufmilo"]
 
 [upstream]
 license = "AGPL-3.0"
-website = "https://joinfirefish.org/"
-demo = "https://joinfirefish.org/"
+website = "https://firefish.dev/"
+demo = "https://info.firefish.dev/@firefish"
 code = "https://firefish.dev/firefish/firefish"
 
 [integration]
