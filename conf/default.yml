@@ -1,6 +1,8 @@
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Calckey configuration
+# Firefish configuration
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# After starting your server, please don't change the URL! Doing so will break federation.
 
 #   ┌─────┐
 #───┘ URL └─────────────────────────────────────────────────────
@@ -8,27 +10,28 @@
 # Final accessible URL seen by a user.
 url: https://__DOMAIN__/
 
-# ONCE YOU HAVE STARTED THE INSTANCE, DO NOT CHANGE THE
-# URL SETTINGS AFTER THAT!
-
 #   ┌───────────────────────┐
 #───┘ Port and TLS settings └───────────────────────────────────
 
 #
-# Misskey requires a reverse proxy to support HTTPS connections.
+# Firefish requires a reverse proxy to support HTTPS connections.
 #
-#                 +----- https://example.tld/ ------------+
+#                 +----- https://example.com/ ------------+
 #   +------+      |+-------------+      +----------------+|
-#   | User | ---> || Proxy (443) | ---> | Calckey (3000) ||
+#   | User | ---> || Proxy (443) | ---> | Firefish (3000) ||
 #   +------+      |+-------------+      +----------------+|
 #                 +---------------------------------------+
 #
-#   You need to set up a reverse proxy. (e.g. nginx)
+#   You need to set up a reverse proxy. (e.g. nginx, caddy)
 #   An encrypted connection with HTTPS is highly recommended
 #   because tokens may be transferred in GET requests.
 
-# The port that your Misskey server should listen on.
+# The port that your Firefish server should listen on.
 port: __PORT__
+
+# The bind host your Firefish server should listen on.
+# If unspecified, the wildcard address will be used.
+#bind: 127.0.0.1
 
 #   ┌──────────────────────────┐
 #───┘ PostgreSQL configuration └────────────────────────────────
@@ -36,7 +39,7 @@ port: __PORT__
 db:
   host: localhost
   port: 5432
-
+  #ssl: false
   # Database name
   db: __DB_NAME__
 
@@ -49,7 +52,9 @@ db:
 
   # Extra Connection options
   #extra:
-  #  ssl: true
+  #  ssl:
+  #   host: localhost
+  #   rejectUnauthorized: false
 
 #   ┌─────────────────────┐
 #───┘ Redis configuration └─────────────────────────────────────
@@ -57,46 +62,65 @@ db:
 redis:
   host: localhost
   port: 6379
+  #tls:
+  #  host: localhost
+  #  rejectUnauthorized: false
+  #family: 0  # 0=Both, 4=IPv4, 6=IPv6
   #pass: example-pass
   #prefix: example-prefix
   db: __REDIS_DB__
+  #user: default
 
 #   ┌─────────────────────────────┐
-#───┘ Elasticsearch configuration └─────────────────────────────
+#───┘ Cache server configuration └─────────────────────────────────────
 
-#elasticsearch:
-#  host: localhost
-#  port: 9200
-#  ssl: false
-#  user: 
-#  pass: 
+# A Redis-compatible server (DragonflyDB, Keydb, Redis) for caching
+# If left blank, it will use the Redis server from above
+
+#cacheServer:
+  #host: localhost
+  #port: 6379
+  #family: 0  # 0=Both, 4=IPv4, 6=IPv6
+  #pass: example-pass
+  #prefix: example-prefix
+  #db: 1
 
 #   ┌───────────────┐
 #───┘ ID generation └───────────────────────────────────────────
 
-# You can select the ID generation method.
-# You don't usually need to change this setting, but you can
-# change it according to your preferences.
+# No need to uncomment in most cases, but you may want to change
+# these settings if you plan to run a large and/or distributed server.
 
-# Available methods:
-# aid ... Short, Millisecond accuracy
-# meid ... Similar to ObjectID, Millisecond accuracy
-# ulid ... Millisecond accuracy
-# objectid ... This is left for backward compatibility
+# cuid:
+#   # Min 16, Max 24
+#   length: 16
+#
+#   # Set this to a unique string across workers (e.g., machine's hostname)
+#   # if your workers are running in multiple hosts.
+#   fingerprint: my-fingerprint
 
-# ONCE YOU HAVE STARTED THE INSTANCE, DO NOT CHANGE THE
-# ID SETTINGS AFTER THAT!
-
-id: 'aid'
 
 #   ┌─────────────────────┐
 #───┘ Other configuration └─────────────────────────────────────
 
+# Maximum length of a post (default 3000, max 100000)
+#maxNoteLength: 3000
+
+# Maximum length of an image caption (default 1500, max 8192)
+#maxCaptionLength: 1500
+
+# Reserved usernames that only the administrator can register with
+reservedUsernames: [
+]
+
 # Whether disable HSTS
 #disableHsts: true
 
-# Number of worker processes
-#clusterLimit: 1
+# Number of worker processes by type.
+# The sum must not exceed the number of available cores.
+#clusterLimits:
+#  web: 1
+#  queue: 1
 
 # Job concurrency per worker
 # deliverJobConcurrency: 128
@@ -110,8 +134,22 @@ id: 'aid'
 # deliverJobMaxAttempts: 12
 # inboxJobMaxAttempts: 8
 
+# Local address used for outgoing requests
+#outgoingAddress: 127.0.0.1
+
 # IP address family used for outgoing request (ipv4, ipv6 or dual)
 #outgoingAddressFamily: ipv4
+
+# Log Option
+# Production env: ['error', 'success', 'warning', 'info']
+# Debug/Test env or Troubleshooting: ['error', 'success', 'warning', 'debug' ,'info']
+# Production env which storage space or IO is tight: ['error', 'warning']
+logLevel: [
+  'error',
+  'success',
+  'warning',
+  'info'
+]
 
 # Syslog option
 #syslog:
@@ -122,6 +160,7 @@ id: 'aid'
 #proxy: http://127.0.0.1:3128
 
 #proxyBypassHosts: [
+#  'web.kaiteki.app',
 #  'example.com',
 #  '192.0.2.8'
 #]
@@ -137,11 +176,20 @@ id: 'aid'
 # Proxy remote files (default: false)
 #proxyRemoteFiles: true
 
-# Sign to ActivityPub GET request (default: false)
-#signToActivityPubGet: true
-
 allowedPrivateNetworks: [
+  '127.0.0.1/32'
 ]
+
+# TWA
+#twa:
+#  nameSpace: android_app
+#  packageName: tld.domain.twa
+#  sha256CertFingerprints: ['AB:CD:EF']
 
 # Upload or download file size limits (bytes)
 #maxFileSize: 262144000
+
+#━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Congrats, you've reached the end of the config file needed for most deployments!
+# Enjoy your Firefish server!
+#━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
