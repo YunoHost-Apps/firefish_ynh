@@ -15,6 +15,13 @@ ynh_script_progression --message="Installing dependencies... This might take som
 ynh_install_nodejs --nodejs_version="$NODEJS_VERSION"
 
 #=================================================
+# CREATE A POSTGRESQL DATABASE
+#=================================================
+ynh_script_progression --message="Initializing postgresql modules..."
+
+ynh_psql_execute_as_root --sql="CREATE EXTENSION IF NOT EXISTS pgroonga;" --database=$db_name
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=3
