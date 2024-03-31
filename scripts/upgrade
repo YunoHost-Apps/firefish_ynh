@@ -53,6 +53,9 @@ if [ -z "$install_dir" ]; then
 	ynh_app_setting_set --app=$app --key=install_dir --value=$install_dir
 fi
 
+# Add PostgreSQL extension for v20240319
+ynh_exec_warn_less ynh_psql_execute_as_root --sql="CREATE EXTENSION IF NOT EXISTS pgroonga;" --database=$db_name
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
