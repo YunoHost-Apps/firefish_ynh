@@ -10,16 +10,6 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# RETRIEVE ARGUMENTS FROM THE MANIFEST
-#=================================================
-
-
-
-#=================================================
-# STANDARD MODIFICATIONS
-#=================================================
-
-#=================================================
 # INSTALL DEPENDENCIES
 #=================================================
 ynh_script_progression --message="Installing dependencies... This might take some time." --weight=3
@@ -53,7 +43,7 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 redis_db=$(ynh_redis_get_free_db)
 ynh_app_setting_set --app="$app" --key=redis_db --value="$redis_db"
 
-ynh_add_config --template="../conf/default.yml" --destination="$install_dir/.config/default.yml"
+ynh_add_config --template="default.yml" --destination="$install_dir/.config/default.yml"
 
 chmod 750 "$install_dir"
 chmod -R o-rwx "$install_dir"
@@ -82,22 +72,11 @@ popd
 #=================================================
 ynh_script_progression --message="Configuring a systemd service..." --weight=1
 
-env_path="$PATH"
 # Create a dedicated systemd config
 ynh_add_systemd_config
 
-#=================================================
-# SETUP LOGROTATE
-#=================================================
-ynh_script_progression --message="Configuring log rotation..." --weight=1
-
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
-
-#=================================================
-# INTEGRATE SERVICE IN YUNOHOST
-#=================================================
-ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
 
 yunohost service add $app --description="A interplanetary blogging platform" --log="/var/log/$app/$app.log"
 
@@ -108,7 +87,6 @@ ynh_script_progression --message="Starting a systemd service..." --weight=1
 
 # Start a systemd service
 ynh_systemd_action --service_name=$app --action="start" --log_path=systemd --line_match="All workers started"
-
 
 #=================================================
 # END OF SCRIPT

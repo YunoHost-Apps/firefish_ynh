@@ -16,7 +16,7 @@ demo = "https://info.firefish.dev/@firefish"
 code = "https://firefish.dev/firefish/firefish"
 
 [integration]
-yunohost = ">= 11.1.14"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = false
 ldap = "not_relevant"
@@ -39,8 +39,8 @@ ram.runtime = "2G"
 [resources]
 
     [resources.sources.main]
-    url = "https://git.joinfirefish.org/firefish/firefish/-/archive/v1.0.5-rc/firefish-v1.0.5-rc.tar.gz"
-    sha256 = "b9b59899eaddcdd94e10974e34af083bd9a9c6228046dc4d4af0f3a669ccb7ef"
+    url = "https://firefish.dev/firefish/firefish/-/archive/v20240206/firefish-v20240206.tar.gz"
+    sha256 = "a0160364e49120a7448202ecba1a7cd61ff8c96f29a97bd7de329ce05957a4d0"
     autoupdate.strategy = "latest_gitlab_release"
 
     [resources.system_user]
