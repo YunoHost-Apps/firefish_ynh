@@ -16,7 +16,7 @@ demo = "https://info.firefish.dev/@firefish"
 code = "https://firefish.dev/firefish/firefish"
 
 [integration]
-yunohost = ">= 11.1.14"
+yunohost = ">= 11.2.12"
 architectures = "all"
 multi_instance = false
 ldap = "not_relevant"
