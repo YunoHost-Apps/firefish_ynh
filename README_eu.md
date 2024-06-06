@@ -30,7 +30,7 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**Paketatutako bertsioa:** 1.0.5rc~ynh1
+**Paketatutako bertsioa:** 20240206~ynh1
 
 **Demoa:** <https://info.firefish.dev>
 
