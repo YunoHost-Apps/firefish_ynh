@@ -32,7 +32,7 @@ I advise you to wait for the release of _Bookworm_ Debian 12.
 
 **Paketatutako bertsioa:** 1.0.5rc~ynh1
 
-**Demoa:** <https://info.firefish.dev/@firefish>
+**Demoa:** <https://info.firefish.dev>
 
 ## Pantaila-argazkiak
 
@@ -40,7 +40,7 @@ I advise you to wait for the release of _Bookworm_ Debian 12.
 
 ## Dokumentazioa eta baliabideak
 
-- Aplikazioaren webgune ofiziala: <https://firefish.dev/>
+- Aplikazioaren webgune ofiziala: <https://joinfirefish.org>
 - Jatorrizko aplikazioaren kode-gordailua: <https://firefish.dev/firefish/firefish>
 - YunoHost Denda: <https://apps.yunohost.org/app/firefish>
 - Eman errore baten berri: <https://github.com/YunoHost-Apps/firefish_ynh/issues>

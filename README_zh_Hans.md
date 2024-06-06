@@ -32,7 +32,7 @@ I advise you to wait for the release of _Bookworm_ Debian 12.
 
 **分发版本：** 1.0.5rc~ynh1
 
-**演示：** <https://info.firefish.dev/@firefish>
+**演示：** <https://info.firefish.dev>
 
 ## 截图
 
@@ -40,7 +40,7 @@ I advise you to wait for the release of _Bookworm_ Debian 12.
 
 ## 文档与资源
 
-- 官方应用网站： <https://firefish.dev/>
+- 官方应用网站： <https://joinfirefish.org>
 - 上游应用代码库： <https://firefish.dev/firefish/firefish>
 - YunoHost 商店： <https://apps.yunohost.org/app/firefish>
 - 报告 bug： <https://github.com/YunoHost-Apps/firefish_ynh/issues>
