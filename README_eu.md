@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Firefish YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/firefish.svg)](https://dash.yunohost.org/appci/app/firefish) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/firefish.svg)](https://ci-apps.yunohost.org/ci/apps/firefish/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
 
 [![Instalatu Firefish YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=firefish)
 
