@@ -14,6 +14,9 @@ ynh_script_progression --message="Installing dependencies... This might take som
 
 ynh_install_nodejs --nodejs_version="$NODEJS_VERSION"
 
+# Install npm-check-updates to manage dependency updates
+npm install -g npm-check-updates
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
@@ -50,7 +53,12 @@ pushd "$install_dir"
 	ynh_use_nodejs
 	env $ynh_node_load_PATH corepack enable
 	env $ynh_node_load_PATH COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack prepare pnpm@latest --activate
-	ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH COREPACK_ENABLE_DOWNLOAD_PROMPT=0 pnpm install
+	
+	# Update all dependencies to the latest compatible versions
+	ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH ncu -u
+	ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH pnpm install
+	
+	# Build the application
 	ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH NODE_ENV=production pnpm build
 	ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH NODE_ENV=production ANTENNA_MIGRATION_SKIP=false ANTENNA_MIGRATION_COPY_LIMIT=0 ANTENNA_MIGRATION_READ_LIMIT=1000 pnpm run migrate
 popd
