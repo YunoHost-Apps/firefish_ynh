@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Firefish pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/firefish.svg)](https://ci-apps.yunohost.org/ci/apps/firefish/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/firefish)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/firefish)
 
 [![Installer Firefish avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=firefish)
 
