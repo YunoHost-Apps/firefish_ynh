@@ -16,6 +16,9 @@ NODEJS_VERSION="22"
 
 build_firefish() {
     pushd "$install_dir"
+
+        ynh_replace_string --match_string='"re2": "1.20.8",' --replace_string='"re2": "1.20.12",' --target_file="packages/backend/package.json"
+
         curl https://sh.rustup.rs -sSf | ynh_exec_warn_less ynh_exec_as $app sh -s -- -y
         export PATH="$install_dir/.cargo/bin:$PATH"
         ynh_use_nodejs
