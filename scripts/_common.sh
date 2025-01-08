@@ -20,7 +20,7 @@ build_firefish() {
         export PATH="$install_dir/.cargo/bin:$PATH"
         ynh_use_nodejs
         env $ynh_node_load_PATH corepack enable
-        env $ynh_node_load_PATH COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack prepare pnpm@latest --activate
+        env $ynh_node_load_PATH COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack prepare pnpm@8.15.5 --activate
 
         # Update all dependencies to the latest compatible versions
         ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH ncu -u
