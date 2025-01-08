@@ -17,6 +17,8 @@ ynh_install_nodejs --nodejs_version="$NODEJS_VERSION"
 # Install npm-check-updates to manage dependency updates
 npm install -g npm-check-updates
 
+ynh_psql_execute_as_root --database="$db_name" --sql="CREATE EXTENSION IF NOT EXISTS pgroonga;"
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================

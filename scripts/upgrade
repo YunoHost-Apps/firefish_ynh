@@ -39,6 +39,8 @@ ynh_script_progression --message="Upgrading dependencies..." --weight=5
 
 ynh_install_nodejs --nodejs_version="$NODEJS_VERSION"
 
+ynh_psql_execute_as_root --database="$db_name" --sql="CREATE EXTENSION IF NOT EXISTS pgroonga;"
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
