@@ -27,7 +27,7 @@ build_firefish() {
 
         # Update all dependencies to the latest compatible versions
         ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH ncu -u
-        ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH COREPACK_ENABLE_DOWNLOAD_PROMPT=0 pnpm install --frozen-lockfile
+        ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH COREPACK_ENABLE_DOWNLOAD_PROMPT=0 pnpm install
 
         # Build the application
         ynh_exec_warn_less ynh_exec_as $app env $ynh_node_load_PATH NODE_ENV=production pnpm build
