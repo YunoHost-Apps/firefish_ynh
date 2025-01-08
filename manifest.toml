@@ -62,8 +62,8 @@ ram.runtime = "2G"
     ]
 
     [resources.apt.extras.pgroonga]
-    repo = "deb http://apt.postgresql.org/pub/repos/apt/ __YNH_DEBIAN_VERSION__-pgdg main"
-    key = "https://www.postgresql.org/media/keys/ACCC4CF8.asc"
+    repo = "deb https://packages.groonga.org/debian/ __YNH_DEBIAN_VERSION__ main"
+    key = "https://packages.groonga.org/debian/groonga-archive-keyring.gpg"
     packages = ["postgresql-15-pgdg-pgroonga"]
 
     [resources.database]
