@@ -1,3 +1,4 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
 packaging_format = 2
 
 id = "firefish"
@@ -64,7 +65,13 @@ ram.runtime = "2G"
     [resources.apt.extras.pgroonga]
     repo = "deb https://packages.groonga.org/debian/ __YNH_DEBIAN_VERSION__ main"
     key = "https://packages.groonga.org/debian/groonga-archive-keyring.gpg"
-    packages = ["postgresql-15-pgdg-pgroonga"]
+    packages_from_raw_bash = """
+        if [[ $YNH_DEBIAN_VERSION == "bullseye" ]]; then
+            echo "postgresql-13-pgdg-pgroonga";
+        elif [[ $YNH_DEBIAN_VERSION == "bookworm" ]]; then
+            echo "postgresql-15-pgdg-pgroonga";
+        fi
+    """
 
     [resources.database]
     type = "postgresql"
