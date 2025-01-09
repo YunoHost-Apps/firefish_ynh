@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Firefish
 
-[![集成程度](https://dash.yunohost.org/integration/firefish.svg)](https://ci-apps.yunohost.org/ci/apps/firefish/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
+![工作状态](https://apps.yunohost.org/badge/state/firefish)
+![维护状态](https://apps.yunohost.org/badge/maintained/firefish)
 
 [![使用 YunoHost 安装 Firefish](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=firefish)
 
@@ -30,7 +32,7 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**分发版本：** 20240206~ynh1
+**分发版本：** 20241205~ynh1
 
 **演示：** <https://info.firefish.dev>
 

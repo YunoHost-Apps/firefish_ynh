@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Firefish untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/firefish.svg)](https://ci-apps.yunohost.org/ci/apps/firefish/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
+![Status kerja](https://apps.yunohost.org/badge/state/firefish)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/firefish)
 
 [![Pasang Firefish dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=firefish)
 
@@ -30,7 +32,7 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**Versi terkirim:** 20240206~ynh1
+**Versi terkirim:** 20241205~ynh1
 
 **Demo:** <https://info.firefish.dev>
 

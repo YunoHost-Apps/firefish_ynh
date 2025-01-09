@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Firefish para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/firefish.svg)](https://ci-apps.yunohost.org/ci/apps/firefish/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
+![Estado funcional](https://apps.yunohost.org/badge/state/firefish)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/firefish)
 
 [![Instalar Firefish con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=firefish)
 
@@ -30,7 +32,7 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**Versión actual:** 20240206~ynh1
+**Versión actual:** 20241205~ynh1
 
 **Demo:** <https://info.firefish.dev>
 
@@ -47,7 +49,7 @@ I advise you to wait for the release of _Bookworm_ Debian 12.
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/firefish_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/firefish_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
