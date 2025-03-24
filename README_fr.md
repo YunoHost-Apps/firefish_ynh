@@ -31,7 +31,7 @@ Certaines fonctions ne seront pas disponible si vous installez ce package.
 
 Je vous conseille d'attendre la sortie de _Bookworm_ Debian 12.
 
-**Version incluse :** 20241205~ynh1
+**Version incluse :** 20241205~ynh2
 
 **Démo :** <https://info.firefish.dev>
 
