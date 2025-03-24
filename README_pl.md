@@ -32,7 +32,7 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**Dostarczona wersja:** 20241205~ynh3
+**Dostarczona wersja:** 20241205~ynh1
 
 **Demo:** <https://info.firefish.dev>
 
