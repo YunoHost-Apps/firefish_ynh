@@ -1,5 +1,5 @@
 #:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
-# dummy changes
+# dummy change
 packaging_format = 2
 
 id = "firefish"
