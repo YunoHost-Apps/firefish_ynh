@@ -5,7 +5,9 @@ NON DEVE essere modificato manualmente.
 
 # Firefish per YunoHost
 
-[![Livello di integrazione](https://dash.yunohost.org/integration/firefish.svg)](https://dash.yunohost.org/appci/app/firefish) ![Stato di funzionamento](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![Stato di manutenzione](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
+[![Livello di integrazione](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
+![Stato di funzionamento](https://apps.yunohost.org/badge/state/firefish)
+![Stato di manutenzione](https://apps.yunohost.org/badge/maintained/firefish)
 
 [![Installa Firefish con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=firefish)
 
@@ -17,17 +19,27 @@ NON DEVE essere modificato manualmente.
 ## Panoramica
 
 
-A greatly enhanced fork of Misskey with better UI/UX, security, features, and more! https://joinfirefish.org/
+A greatly enhanced fork of Misskey with better UI/UX, security, features, and more!
 
 
     Firefish is based off of Misskey, a powerful microblogging server on ActivityPub with features such as emoji reactions, a customizable web UI, rich chatting, and much more!
     Firefish adds many quality of life changes and bug fixes for users and instance admins alike.
-   
 
+### 🛑 FIREFISH REACHED END OF LIFE 🛑 ###
 
-**Versione pubblicata:** 1.0.5rc~ynh1
+As [announced](https://lm.korako.me/post/91660) Firefish reached end of life at the end of 2024, now it's [homepage](https://firefish.dev) is blank, code repo is gone and the app is no longer installable.
+Move to [alternatives](https://apps.yunohost.org/catalog?category=social_media) ASAP!
 
-**Prova:** <https://joinfirefish.org/>
+### ⚠️ PLEASE READ CAREFULLY ⚠️
+
+**Firefish** requires **redis** version **7**, but YunoHost does not currently support this version.
+Some functions will not be available if you install this package.
+
+I advise you to wait for the release of _Bookworm_ Debian 12.
+
+**Versione pubblicata:** 20241205~ynh1
+
+**Prova:** <https://info.firefish.dev>
 
 ## Screenshot
 
@@ -35,7 +47,7 @@ A greatly enhanced fork of Misskey with better UI/UX, security, features, and mo
 
 ## Documentazione e risorse
 
-- Sito web ufficiale dell’app: <https://joinfirefish.org/>
+- Sito web ufficiale dell’app: <https://joinfirefish.org>
 - Repository upstream del codice dell’app: <https://firefish.dev/firefish/firefish>
 - Store di YunoHost: <https://apps.yunohost.org/app/firefish>
 - Segnala un problema: <https://github.com/YunoHost-Apps/firefish_ynh/issues>
