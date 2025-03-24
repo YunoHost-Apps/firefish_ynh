@@ -7,7 +7,7 @@ name = "Firefish"
 description.en = "Fork of Misskey with better UI/UX, security, features"
 description.fr = "Un fork de Misskey avec une meilleure interface utilisateur, la sécurité, les fonctionnalités"
 
-version = "20241205~ynh3"
+version = "20241205~ynh1"
 
 maintainers = ["oufmilo"]
 
