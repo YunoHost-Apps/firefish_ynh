@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Firefish para Yunohost
+# Firefish para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/firefish)
@@ -32,13 +32,17 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**Versión actual:** 20241205~ynh2
+**Versión actual:** 20241205~ynh1
 
 **Demo:** <https://info.firefish.dev>
 
 ## Capturas
 
 ![Captura de Firefish](./doc/screenshots/screenshot-firefish.png)
+
+## :red_circle: Características no deseables
+
+- **Upstream not maintained**: This software is not maintained anymore. Expect it to break down over time, be exposed to unfixed security breaches, etc.
 
 ## Documentaciones y recursos
 

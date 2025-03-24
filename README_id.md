@@ -32,13 +32,17 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**Versi terkirim:** 20241205~ynh2
+**Versi terkirim:** 20241205~ynh1
 
 **Demo:** <https://info.firefish.dev>
 
 ## Tangkapan Layar
 
 ![Tangkapan Layar pada Firefish](./doc/screenshots/screenshot-firefish.png)
+
+## :red_circle: Antifitur
+
+- **Upstream not maintained**: This software is not maintained anymore. Expect it to break down over time, be exposed to unfixed security breaches, etc.
 
 ## Dokumentasi dan sumber daya
 

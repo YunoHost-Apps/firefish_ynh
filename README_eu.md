@@ -32,13 +32,17 @@ Some functions will not be available if you install this package.
 
 I advise you to wait for the release of _Bookworm_ Debian 12.
 
-**Paketatutako bertsioa:** 20241205~ynh2
+**Paketatutako bertsioa:** 20241205~ynh1
 
 **Demoa:** <https://info.firefish.dev>
 
 ## Pantaila-argazkiak
 
 ![Firefish(r)en pantaila-argazkia](./doc/screenshots/screenshot-firefish.png)
+
+## :red_circle: Ezaugarri zalantzagarriak
+
+- **Jatorrizko garapena utzita**: Software honek ez du arduradunik. Denborak aurrera egin ahala funtzionatzeari utziko dio, konpondu gabeko segurtasun arazoak izango ditu, etab.
 
 ## Dokumentazioa eta baliabideak
 
@@ -51,7 +55,7 @@ I advise you to wait for the release of _Bookworm_ Debian 12.
 
 Bidali `pull request`a [`testing` abarrera](https://github.com/YunoHost-Apps/firefish_ynh/tree/testing).
 
-`testing` abarra probatzeko, ondorengoa egin:
+`testing` abarra probatzeko, honakoa egin:
 
 ```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/firefish_ynh/tree/testing --debug

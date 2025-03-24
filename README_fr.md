@@ -31,13 +31,17 @@ Certaines fonctions ne seront pas disponible si vous installez ce package.
 
 Je vous conseille d'attendre la sortie de _Bookworm_ Debian 12.
 
-**Version incluse :** 20241205~ynh2
+**Version incluse :** 20241205~ynh1
 
 **Démo :** <https://info.firefish.dev>
 
 ## Captures d’écran
 
 ![Capture d’écran de Firefish](./doc/screenshots/screenshot-firefish.png)
+
+## :red_circle: Anti-fonctionnalités
+
+- **Application non maintenue **: Ce logiciel n'est plus maintenu. Attendez-vous à ce qu'il ne fonctionne plus avec le temps, et que l'on découvre des failles de sécurité qui ne seront pas corrigées, etc.
 
 ## Documentations et ressources
 

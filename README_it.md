@@ -5,7 +5,9 @@ NON DEVE essere modificato manualmente.
 
 # Firefish per YunoHost
 
-[![Livello di integrazione](https://dash.yunohost.org/integration/firefish.svg)](https://dash.yunohost.org/appci/app/firefish) ![Stato di funzionamento](https://ci-apps.yunohost.org/ci/badges/firefish.status.svg) ![Stato di manutenzione](https://ci-apps.yunohost.org/ci/badges/firefish.maintain.svg)
+[![Livello di integrazione](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
+![Stato di funzionamento](https://apps.yunohost.org/badge/state/firefish)
+![Stato di manutenzione](https://apps.yunohost.org/badge/maintained/firefish)
 
 [![Installa Firefish con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=firefish)
 
@@ -17,25 +19,34 @@ NON DEVE essere modificato manualmente.
 ## Panoramica
 
 
-A greatly enhanced fork of Misskey with better UI/UX, security, features, and more! https://joinfirefish.org/
+A greatly enhanced fork of Misskey with better UI/UX, security, features, and more!
 
 
     Firefish is based off of Misskey, a powerful microblogging server on ActivityPub with features such as emoji reactions, a customizable web UI, rich chatting, and much more!
     Firefish adds many quality of life changes and bug fixes for users and instance admins alike.
-   
 
+### ⚠️ PLEASE READ CAREFULLY ⚠️
 
-**Versione pubblicata:** 1.0.5rc~ynh1
+**Firefish** requires **redis** version **7**, but YunoHost does not currently support this version.
+Some functions will not be available if you install this package.
 
-**Prova:** <https://joinfirefish.org/>
+I advise you to wait for the release of _Bookworm_ Debian 12.
+
+**Versione pubblicata:** 20241205~ynh1
+
+**Prova:** <https://info.firefish.dev>
 
 ## Screenshot
 
 ![Screenshot di Firefish](./doc/screenshots/screenshot-firefish.png)
 
+## :red_circle: Anticaratteristiche
+
+- **Applicazione non mantenuta**: Questo software non è più mantenuto. Ci si può aspettare che con il passare del tempo smetta di funzionare, sia esposto a falle di sicurezza, ecc.
+
 ## Documentazione e risorse
 
-- Sito web ufficiale dell’app: <https://joinfirefish.org/>
+- Sito web ufficiale dell’app: <https://joinfirefish.org>
 - Repository upstream del codice dell’app: <https://firefish.dev/firefish/firefish>
 - Store di YunoHost: <https://apps.yunohost.org/app/firefish>
 - Segnala un problema: <https://github.com/YunoHost-Apps/firefish_ynh/issues>

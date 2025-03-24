@@ -1,5 +1,4 @@
 #:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
-# dummy change
 packaging_format = 2
 
 id = "firefish"
@@ -7,7 +6,7 @@ name = "Firefish"
 description.en = "Fork of Misskey with better UI/UX, security, features"
 description.fr = "Un fork de Misskey avec une meilleure interface utilisateur, la sécurité, les fonctionnalités"
 
-version = "20241205~ynh2"
+version = "20241205~ynh1"
 
 maintainers = ["oufmilo"]
 
