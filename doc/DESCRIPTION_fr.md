@@ -6,8 +6,8 @@ Un fork grandement amélioré de Misskey avec une meilleure UI/UX, sécurité, f
 
 ### 🛑 FIREFISH REACHED END OF LIFE 🛑 ###
 
-As [announced](https://lm.korako.me/post/91660) Firefish reached end of life at the end of 2024, now it's [homepage](https://firefish.dev) is blank, code repo is gone and the app is no longer installable.
-Move to [alternatives](https://apps.yunohost.org/catalog?category=social_media) ASAP!
+Tel [qu'annoncé](https://lm.korako.me/post/91660), Firefish est désormais déprécié depuis fin 2024 et désormais [sa page principale](https://firefish.dev) ainsi que son repo de code ont disparus et l'app n'est plus installable.
+Remplacez Firefish par une des [alternatives](https://apps.yunohost.org/catalog?category=social_media) dès que possible !
 
 ### ⚠️ A LIRE ATTENTIVEMENT ⚠️
 
