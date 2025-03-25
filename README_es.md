@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Firefish para Yunohost
+# Firefish para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/firefish)](https://ci-apps.yunohost.org/ci/apps/firefish/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/firefish)
@@ -24,6 +24,11 @@ A greatly enhanced fork of Misskey with better UI/UX, security, features, and mo
 
     Firefish is based off of Misskey, a powerful microblogging server on ActivityPub with features such as emoji reactions, a customizable web UI, rich chatting, and much more!
     Firefish adds many quality of life changes and bug fixes for users and instance admins alike.
+
+### 🛑 FIREFISH REACHED END OF LIFE 🛑 ###
+
+As [announced](https://lm.korako.me/post/91660) Firefish reached end of life at the end of 2024, now it's [homepage](https://firefish.dev) is blank, code repo is gone and the app is no longer installable.
+Move to [alternatives](https://apps.yunohost.org/catalog?category=social_media) ASAP!
 
 ### ⚠️ PLEASE READ CAREFULLY ⚠️
 
